@@ -1,1 +1,1 @@
-6u1j7e61yz8szzao8h6m5wtovf16p7dw.oastify.com
+https://73b1-34-166-108-72.ngrok-free.app/
