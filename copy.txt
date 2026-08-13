@@ -1,13 +1,1 @@
-Invoke-Command -ComputerName PS-VODAGSM-AAME,PS-VODAGSM-AAMC -ScriptBlock {
-  $d = 'C:\ProgramData\Balleticalless'
-  [pscustomobject]@{
-    Host     = $env:COMPUTERNAME
-    DropDir  = Test-Path $d
-    Files    = (Get-ChildItem $d -Force -EA SilentlyContinue | Select-Object -Expand Name) -join ';'
-    Task     = [bool](Get-ScheduledTask -TaskName Undraftment -TaskPath '\Unlearningest\Lengthwisization\' -EA SilentlyContinue)
-    TaskFile = Test-Path 'C:\Windows\System32\Tasks\Unlearningest\Lengthwisization\Undraftment'
-    Reg      = Test-Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Unlearningest'
-    Beacon   = [bool](Get-CimInstance Win32_Process -Filter "Name='powershell.exe'" -EA SilentlyContinue | ? {$_.CommandLine -match 'Balleticalless|unholdible'})
-    Hash_ps1 = try { (Get-FileHash "$d\unholdible.ps1" -EA Stop).Hash } catch { 'n/a' }
-  }
-} | Format-List
+.\Hunt-ClickFix-Compromise.ps1 -FromAD -ThrottleLimit 64 -SmbThrottle 40 -OutputDirectory C:\IR
